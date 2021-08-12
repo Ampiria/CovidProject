@@ -56,7 +56,7 @@ body {
   background-color: transparent; 
   position: absolute;
   z-index: 3;
-  left: 48%;
+  left: 47.5%;
   top: 26%;
   border: none;
   padding: 15px 32px;
@@ -71,7 +71,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 33%;
-  top: 100%;
+  top: 98%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -130,8 +130,8 @@ body {
   content: 'x';
   cursor: pointer;
   position: fixed;
-  right: calc(5% + 395px);
-  top: calc(100vh - 85vh - 27px);
+  right: calc(5% + 385px);
+  top: calc(100vh - 85vh - 32px);
   background: #ededed;
   width: 25px;
   height: 25px;
