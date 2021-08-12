@@ -37,7 +37,16 @@ export const delta = {
   mutations: ["L452R: May improve the virus' ability to spread",
               "E484Q: Might allow the virus to evade some antibodies"],
   info: "The Delta variant, originating in India, is currently the fastest spreading variant. The variant is spreading 50% faster than the Alpha variant which already spread 50% faster than the original strain. The virus’ high infectivity is thought to be due to its mutations that allow it to cling to human cells more easily, and children and adults under 50 are 2.5 times more likely to be infected by Delta. The variant also seems to be infectious earlier after exposure (4 days rather than 6 days) and for a longer period of time (18 days vs 13 days). The severity of the variant is still unknown. Studies in Scotland and Canada showed that the variant was about twice as likely to result in hospitalization, but other studies show that it does not increase severity at all. The variant is most deadly to the unvaccinated, and while the variant is slightly more resistant to the vaccines, vaccination is still the best way to combat the disease with the Pfizer vaccine being shown to remain extremely effective against severe Delta variant progression. ",
-  sources: ["nytimes.com/interactive/2021/health/coronavirus-variant-tracker.html#gamma",
+  sources: ["nytimes.com/interactive/2021/health/coronavirus-variant-tracker.html#delta",
             "https://www.ucsf.edu/news/2021/08/421171/how-dangerous-delta-variant-heres-what-science-says",
              "https://www.yalemedicine.org/news/5-things-to-know-delta-variant-covid"]
 };
+
+export const epsilon = {
+  name: "Epsilon Variant",
+  lineage: "B.1.427",
+  mutations: ["L452R: May improve the virus' ability to spread"],
+  info: "The Epsilon variant, originating in California, has mutations that reduce antibody effectiveness regardless of whether the antibodies were gained from vaccination or disease recovery. Like the Gamma variant, the epsilon variant is more resistant to monoclonal antibody treatment. However, this variant has mostly vanished from most places in the US, partially due to the other variants excelling both immune resistance and infectivity. ",
+  sources: ["https://www.nytimes.com/interactive/2021/health/coronavirus-variant-tracker.html#epsilon",
+            "https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/coronavirus-4-different-types-of-covid-19-vaccines-heres-how-they-work/photostory/84229787.cms"]
+}

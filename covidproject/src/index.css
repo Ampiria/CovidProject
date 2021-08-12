@@ -1,9 +1,18 @@
 body {
   background-image: linear-gradient(#799FCB, #afc7d0, #EEF1E6, #F9665E) ;
 }
-
+#instructions{
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
 #main-header{
   text-align: center;
+  color: white;
+  padding: 0px;
 }
 
 
@@ -43,6 +52,20 @@ body {
   font-size: 36px;
 }
 
+#epsilon{
+  background-color: transparent; 
+  position: absolute;
+  z-index: 3;
+  left: 48%;
+  top: 24%;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+}
+
 #gamma{
   background-color: transparent; 
   position: absolute;
@@ -61,7 +84,7 @@ body {
   background-color: transparent; 
   position: absolute;
   z-index: 3;
-  left: 63%;
+  left: 62.5%;
   top: 24%;
   border: none;
   padding: 15px 32px;

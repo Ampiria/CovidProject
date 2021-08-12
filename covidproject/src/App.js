@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Popup from './PopUp';
-import { alpha,beta,gamma,delta } from './VariantInfo';
+import { alpha,beta,gamma,delta, epsilon } from './VariantInfo';
 function App() {
   const [isOpenAlpha, setIsOpenAlpha] = useState(false);
   const [isOpenBeta, setIsOpenBeta] = useState(false);
   const [isOpenGamma, setIsOpenGamma] = useState(false);
   const [isOpenDelta, setIsOpenDelta] = useState(false);
+  const [IsOpenEpsilon, setIsOpenEpsilon] = useState(false);
 
 
   const togglePopupAlpha = () => {
@@ -22,6 +23,10 @@ function App() {
 
   const togglePopupDelta = () => {
     setIsOpenDelta(!isOpenDelta);
+  }
+
+  const togglePopupEpsilon = () => {
+    setIsOpenEpsilon(!IsOpenEpsilon);
   }
 
   return <div class="main-div">
@@ -109,6 +114,27 @@ function App() {
         }
       </>}
       handleClose={togglePopupDelta}
+    />}
+    <input
+      type="button"
+      value="ε"
+      onClick={togglePopupEpsilon}
+      id="epsilon"
+      class="concern"
+    />
+    {IsOpenEpsilon && <Popup
+      content={<>
+        <b>{epsilon.name} </b><br></br>
+        <b>Lineage: {epsilon.lineage}</b>
+        <p>Key Mutations: </p>
+        {epsilon.mutations.map((value, index) => {return <li>{value}</li>})}
+        <p>{epsilon.info}</p>
+        <p>Sources:</p>
+        {
+          epsilon.sources.map((value,index) => {return <a href={value}>{value}<br /></a>})
+        }
+      </>}
+      handleClose={togglePopupEpsilon}
     />}
   </div>
 }
