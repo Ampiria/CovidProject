@@ -43,7 +43,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 33%;
-  top: 24%;
+  top: 40%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -57,7 +57,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 48%;
-  top: 24%;
+  top: 26%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -71,7 +71,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 33%;
-  top: 84%;
+  top: 100%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -85,7 +85,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 62.5%;
-  top: 24%;
+  top: 40%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -99,7 +99,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 62%;
-  top: 84%;
+  top: 100%;
   border: none;
   padding: 15px 32px;
   text-align: center;
