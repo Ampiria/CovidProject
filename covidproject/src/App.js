@@ -17,7 +17,7 @@ function App() {
   }
 
   const togglePopupGamma = () => {
-    setIsOpenDelta(!isOpenGamma);
+    setIsOpenGamma(!isOpenGamma);
   }
 
   const togglePopupDelta = () => {
