@@ -43,7 +43,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 33%;
-  top: 40%;
+  top: 38%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -63,7 +63,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+  font-size: 38px;
 }
 
 #gamma{
@@ -85,7 +85,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 62.5%;
-  top: 40%;
+  top: 39%;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -99,7 +99,7 @@ body {
   position: absolute;
   z-index: 3;
   left: 62%;
-  top: 100%;
+  top: 98%;
   border: none;
   padding: 15px 32px;
   text-align: center;
