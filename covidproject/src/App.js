@@ -7,12 +7,6 @@ function App() {
   const [isOpenGamma, setIsOpenGamma] = useState(false);
   const [isOpenDelta, setIsOpenDelta] = useState(false);
 
-  
-
-  const variants = [alpha,beta,gamma, delta];
-
-  
-  const values = {"alpha":isOpenAlpha, "beta":isOpenBeta, "gamma":isOpenGamma, "delta":isOpenDelta}
 
   const togglePopupAlpha = () => {
     setIsOpenAlpha(!isOpenAlpha);
@@ -30,9 +24,13 @@ function App() {
       content={<>
         <b>{alpha.name} </b><br></br>
         <b>Lineage: {alpha.lineage}</b>
+        <p>Key Mutations: </p>
+        {alpha.mutations.map((value, index) => {return <li>{value}</li>})}
         <p>{alpha.info}</p>
         <p>Sources:</p>
-        <a href={alpha.sources[0]}>{alpha.sources[0]}</a>
+        {
+          alpha.sources.map((value,index) => {return <a href={value}>{value}<br /></a>})
+        }
       </>}
       handleClose={togglePopupAlpha}
     />}

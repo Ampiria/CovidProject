@@ -9,6 +9,7 @@ body {
 
 .popup-box {
   position: fixed;
+  z-index: 4;
   background: #00000050;
   width: 100%;
   height: 100vh;
@@ -31,7 +32,7 @@ body {
 #alpha{
   background-color: transparent; 
   position: absolute;
-  z-index: 10;
+  z-index: 3;
   left: 33%;
   top: 24%;
   border: none;
