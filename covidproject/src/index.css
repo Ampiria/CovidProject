@@ -36,12 +36,29 @@ body {
   left: 33%;
   top: 24%;
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 36px;
+}
+
+#beta{
+  background-color: transparent; 
+  position: absolute;
+  z-index: 3;
+  left: 53%;
+  top: 24%;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+}
+
+.concern{
+  color: rgb(241, 241, 57);
 }
 
 .box {

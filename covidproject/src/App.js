@@ -12,6 +12,10 @@ function App() {
     setIsOpenAlpha(!isOpenAlpha);
   }
 
+  const togglePopupBeta = () => {
+    setIsOpenBeta(!isOpenBeta);
+  }
+
   return <div class="main-div">
     <img src="covid.png" alt="Coronavirus Illustration" id="covid"></img>
     <input
@@ -19,6 +23,7 @@ function App() {
       value="α"
       onClick={togglePopupAlpha}
       id="alpha"
+      class="concern"
     />
     {isOpenAlpha && <Popup
       content={<>
@@ -34,7 +39,27 @@ function App() {
       </>}
       handleClose={togglePopupAlpha}
     />}
-
+    <input
+      type="button"
+      value="β"
+      onClick={togglePopupBeta}
+      id="beta"
+      class="concern"
+    />
+    {isOpenBeta && <Popup
+      content={<>
+        <b>{beta.name} </b><br></br>
+        <b>Lineage: {beta.lineage}</b>
+        <p>Key Mutations: </p>
+        {beta.mutations.map((value, index) => {return <li>{value}</li>})}
+        <p>{beta.info}</p>
+        <p>Sources:</p>
+        {
+          beta.sources.map((value,index) => {return <a href={value}>{value}<br /></a>})
+        }
+      </>}
+      handleClose={togglePopupBeta}
+    />}
   </div>
 }
 
