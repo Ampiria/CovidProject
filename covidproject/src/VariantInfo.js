@@ -17,6 +17,21 @@ export const beta = {
             "https://www.nytimes.com/2021/07/19/health/beta-variant-covid-19.html"]
 };
 
-export const gamma = null;
+export const gamma = {
+  name: "Gamma Variant",
+  lineage: "P.1",
+  mutations: ["N501Y: Helps the virus attach to human cells more easily (current vaccines likely to still be effective)",
+              "K417T: May improve the virus' ability to attach to human cells",
+              "E484K: Might allow the virus to evade some antibodies"],
+  info: "",
+  sources: ["nytimes.com/interactive/2021/health/coronavirus-variant-tracker.html#gamma"]
+};
 
-export const delta = null;
+export const delta = {
+  name: "Delta Variant",
+  lineage: "B.1.167",
+  mutations: ["L452R: May improve the virus' ability to spread",
+              "E484Q: Might allow the virus to evade some antibodies"],
+  info: "",
+  sources: ["nytimes.com/interactive/2021/health/coronavirus-variant-tracker.html#gamma"]
+};
